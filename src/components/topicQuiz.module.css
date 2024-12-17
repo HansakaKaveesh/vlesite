@@ -1,0 +1,79 @@
+.topicQuizContainer {
+    background-color: #2d3748; /* Darker background to match theme */
+    border-radius: 10px; /* Rounded corners for consistency */
+    padding: 20px; /* Space inside the container */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); /* Enhanced shadow effect */
+    max-width: 700px; /* Centered max-width */
+    margin: 20px auto; /* Center the container */
+    color: #ffffff; /* White text for better contrast */
+}
+
+.quizTitle {
+    font-size: 2rem; /* Large title size */
+    margin-bottom: 20px; /* Space below the title */
+    color: #4fd1c5; /* Accent color */
+    text-align: center; /* Center-align title */
+}
+
+.question {
+    margin-bottom: 15px; /* Space between questions */
+    font-size: 1.1rem; /* Larger font size for readability */
+    color: #cccccc; /* Subtle gray for better contrast */
+}
+
+.options {
+    margin: 10px 0; /* Space around options */
+}
+
+.options label {
+    display: block; /* Block layout for easier interaction */
+    margin-bottom: 8px; /* Space between options */
+    cursor: pointer; /* Pointer cursor for interactivity */
+    background-color: #161c28; /* Slightly lighter than container */
+    border: 1px solid #4a5568; /* Subtle border */
+    border-radius: 8px; /* Rounded corners for buttons */
+    padding: 12px; /* Padding inside each option */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth hover effects */
+}
+
+.options input {
+    margin-right: 10px; /* Space between radio and label */
+}
+
+.options label:hover {
+    background-color: #3a4454; /* Darken on hover */
+    transform: translateY(-3px); /* Lift on hover */
+}
+
+.unansweredNotification {
+    color: red;
+    font-size: 0.9rem; /* Slightly smaller font */
+    margin-top: 10px; /* Space above notification */
+}
+
+.submitButton {
+    background-color: #63b3ed; /* Blue for button */
+    color: #ffffff; /* White text for contrast */
+    border: none; /* No border */
+    border-radius: 8px; /* Rounded button */
+    padding: 12px 20px; /* Spacing inside button */
+    cursor: pointer; /* Pointer cursor */
+    font-size: 1rem; /* Font size for text */
+    margin-top: 15px; /* Space above button */
+    text-align: center; /* Center the text */
+    width: 100%; /* Full-width button */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+.submitButton:hover {
+    background-color: #4a90e2; /* Darker blue on hover */
+    transform: translateY(-3px); /* Lift on hover */
+}
+
+.result {
+    margin-top: 20px; /* Space above the result */
+    font-size: 1.2rem; /* Larger font size for result */
+    font-weight: bold; /* Bold font for emphasis */
+    text-align: center; /* Center-align result */
+    color: #63b3ed; /* Blue for result */
+}

@@ -1,0 +1,207 @@
+.dashboardContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #2d3748, #01000f); /* Dark gradient */
+  color: #ffffff; /* White text for contrast */
+}
+
+.header {
+  padding: 20px; /* Updated padding for better spacing */
+  text-align: center;
+  background-color: #161c28; /* Darker header background */
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-top: 40px; /* Reduced space between header and title */
+  color: #ffffff;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #cccccc;
+  margin-bottom: 20px; /* Reduced margin for better compactness */
+}
+
+.mainContent {
+  flex: 1;
+  padding: 20px; /* Increased padding for more space */
+}
+
+/* Card styles for all information sections */
+.card {
+  background-color: #2d3748; /* Darker card background */
+  color: #ffffff;
+  border-radius: 10px; /* Slightly rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); /* Enhanced shadow */
+  padding: 20px;
+  margin: 15px 0; /* Adjusted margin for better spacing */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Deeper shadow on hover */
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px; /* Increased margin for card header */
+}
+
+.icon {
+  font-size: 2rem; /* Slightly larger icon */
+  color: #63b3ed; /* Blue icon color */
+  margin-right: 15px; /* Increased margin for better spacing */
+}
+
+.cardTitle {
+  font-size: 1.8rem; /* Larger title size for emphasis */
+  font-weight: bold;
+}
+
+/* List styles for course information */
+.cardList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cardItem {
+  font-size: 1rem;
+  padding: 12px 0; /* Increased padding for better spacing */
+  border-bottom: 1px solid #4a5568; /* Subtle border */
+}
+
+.cardItem:last-child {
+  border-bottom: none; /* Remove border for last item */
+}
+
+.link {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.link:hover {
+  color: rgb(113, 112, 169); /* Optional: change color on hover */
+}
+
+/* Course information specific styles */
+.courseInfoSection {
+  background-color: #2d3748; /* Darker background for course information */
+  border-radius: 10px; /* Slightly rounded corners */
+  padding: 20px; /* Padding for spacing */
+  margin: 15px 0; /* Margin for spacing */
+}
+
+.courseInfoTitle {
+  font-size: 1.8rem; /* Title size for course information */
+  font-weight: bold;
+  margin-bottom: 10px; /* Margin below title */
+}
+
+.courseDescription {
+  font-size: 1rem; /* Standard size for description text */
+  margin: 10px 0; /* Margin for spacing */
+  line-height: 1.5; /* Improved readability */
+}
+
+.selectedSubjectItem,
+.itemValue,
+.dueDate,
+.grade,
+.eventDate {
+  font-weight: bold;
+  color: #63b3ed; /* Blue accent color for important info */
+}
+
+/* New styles for subjects section */
+.subjectsSection {
+  background-color: #2d3748; /* Darker background for the subjects section */
+  border-radius: 10px; /* Slightly rounded corners */
+  padding: 20px; /* Padding for spacing */
+  margin: 15px 0; /* Margin for spacing */
+}
+
+.subjectsTitle {
+  font-size: 1.8rem; /* Title size for the subjects */
+  font-weight: bold;
+  margin-bottom: 10px; /* Margin below title */
+}
+
+.subjectsList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.subjectItem {
+  font-size: 1rem;
+  padding: 8px 0; /* Padding for subjects */
+  border-bottom: 1px solid #4a5568; /* Subtle border */
+}
+
+.subjectItem:last-child {
+  border-bottom: none; /* Remove border for last item */
+}
+
+.selectedSubjectsList {
+  margin-top: 0.5rem; /* Adds space above the list */
+  padding-left: 1rem; /* Indent the list */
+  list-style-type: disc; /* Change the bullet style */
+}
+
+/* Style for select elements (dropdowns) */
+.selector select {
+  background-color: #f0f0f0;  /* Light grey background */
+  border: 1px solid #ccc;     /* Light border */
+  padding: 8px;                /* Padding for better click area */
+  font-size: 16px;             /* Font size */
+  border-radius: 4px;          /* Rounded corners */
+  color: #333;                 /* Dark text color */
+}
+
+/* Optional: Add a hover effect */
+.selector select:hover {
+  background-color: #e0e0e0;  /* Slightly darker grey on hover */
+}
+
+/* Optional: Add a focus effect for accessibility */
+.selector select:focus {
+  background-color: #e8e8e8;  /* Slightly darker background when focused */
+  border-color: #007bff;      /* Change border color when focused */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+    margin-top: 20px; /* Adjusted margin for smaller screens */
+  }
+
+  .subtitle {
+    font-size: 1rem; /* Adjusted subtitle size */
+  }
+
+  .card {
+    padding: 15px; /* Adjusted padding for smaller screens */
+  }
+
+  .icon {
+    font-size: 1.5rem; /* Adjusted icon size */
+  }
+
+  .cardTitle {
+    font-size: 1.5rem; /* Adjusted title size */
+  }
+
+  .continueButton {
+    font-size: 0.9rem; /* Adjusted button font size */
+  }
+
+  .cardItem {
+    font-size: 0.9rem; /* Smaller font size for card items */
+  }
+}

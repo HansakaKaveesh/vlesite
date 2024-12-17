@@ -1,0 +1,65 @@
+/* src/app/courses/courses.module.css */
+.coursesContainer {
+    padding: 20px; /* Reduced top padding since header space is already managed in the layout */
+    padding-top: 0; /* No padding needed at the top due to global pt-20 */
+    min-height: 100vh;
+    background-image: url('/banner.jpg'); /* Ensure this path is correct */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Parallax effect */
+    color: white; /* Text color adjustment for readability */
+}
+.pageTitle {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: white; /* Adjusted to contrast with the background */
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0); /* Add subtle text shadow */
+}
+
+.coursesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.courseCard {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for readability */
+    color: white;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.courseTitle {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.levelOptions {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.course {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.courseButton {
+    background-color: #28a745;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.courseButton:hover {
+    background-color: #218838;
+}

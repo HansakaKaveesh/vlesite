@@ -1,0 +1,146 @@
+/* General container styling for the page layout */
+.container {
+  background: linear-gradient(to bottom, #2d3748, #01000f);
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+/* Header Container */
+.headercontainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #161c28;
+  padding: 15px;
+  flex-wrap: wrap;
+}
+
+.gencontainer {
+  display: flex;
+  gap: 20px;
+}
+
+.genzedu {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.help {
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.button1,
+.button2 {
+  background-color: #1e55bb;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.button1:hover {
+  background-color: #2e79e3;
+}
+
+.button2 {
+  background-color: #169d45;
+}
+
+.button2:hover {
+  background-color: #28cb5e;
+}
+
+/* Content Section */
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 10%;
+  flex-wrap: wrap;
+}
+
+/* Text Section */
+.textSection {
+  flex: 1;
+  padding-right: 20px;
+  max-width: 50%;
+}
+
+.textSection h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.searchBar {
+  width: 80%;
+  padding: 10px;
+  margin-top: 20px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  outline: none;
+  color: #161c28;
+}
+
+.searchBar::placeholder {
+  color: #999;
+}
+
+/* Image Section */
+.imageSection {
+  position: relative;
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  max-width: 45%;
+  padding: 20px 0;
+}
+
+/* Image styling to ensure it's positioned relative to blobs */
+.teamImage {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  position: relative;
+  z-index: 2;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .textSection {
+    max-width: 100%;
+    padding-right: 0;
+  }
+
+  .imageSection {
+    max-width: 100%;
+    justify-content: center;
+  }
+
+  .blob1, .blob2 {
+    width: 200px;
+    height: 200px;
+  }
+
+  .searchBar {
+    width: 100%;
+  }
+}
+

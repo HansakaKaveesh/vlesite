@@ -1,0 +1,104 @@
+/* Importing Google Fonts (Make sure to include this in your HTML <head> section) */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+.csContainer {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #1a202c, #000000); /* Darker gradient */
+    color: #ffffff; /* White text for contrast */
+    padding: 20px; /* Overall padding for the container */
+    font-family: 'Roboto', sans-serif; /* Using Roboto for better readability */
+}
+  
+.title {
+    font-size: 2.2rem; /* Title size */
+    text-align: center;
+    margin-bottom: 20px; /* Margin below title */
+    color: #4fd1c5; /* Title color */
+}
+  
+.topicsSection {
+    margin-top: 30px; /* Space above topics section */
+}
+  
+.subtitle {
+    font-size: 1.6rem; /* Subtitle size */
+    color: #cbd5e1; /* Soft light gray for subtitle */
+    text-align: center; /* Centered subtitle */
+    margin-bottom: 15px; /* Margin below subtitle */
+}
+  
+.topicsList {
+    display: flex;
+    flex-direction: column; /* Stack topics vertically */
+}
+  
+.topicItem {
+    background-color: #1a202c; /* Darker background for topic items */
+    border-radius: 10px; /* Slightly rounded corners */
+    padding: 15px; /* Padding for topic items */
+    margin: 10px 0; /* Margin between topic items */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth background transition */
+}
+  
+.topicItem:hover {
+    background-color: #2d3748; /* Highlight color on hover */
+}
+  
+.topicTitle {
+    font-size: 1.7rem; /* Topic title size */
+    font-weight: normal; /* Normal weight for topic titles */
+    color: #4fd1c5; /* Topic title color */
+}
+  
+.lessonsList {
+    margin-top: 10px; /* Space above lessons list */
+}
+  
+.lessonItem {
+    background-color: #1a202c; /* Darker background for lesson items */
+    border-radius: 10px; /* Slightly rounded corners */
+    padding: 10px; /* Padding for lesson items */
+    margin: 5px 0; /* Margin between lesson items */
+}
+  
+.lessonTitle {
+    font-size: 1.4rem; /* Lesson title size */
+    color: #ffffff; /* White color for lesson titles */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+  
+.lessonTitle:hover {
+    color: #4fd1c5; /* Change color on hover */
+}
+  
+.lessonContent {
+    margin-top: 10px; /* Space above lesson content */
+    padding: 10px; /* Padding for lesson content */
+    background-color: #0f172a; /* Darker background for lesson content */
+    border-radius: 10px; /* Slightly rounded corners */
+    color: #e2e8f0; /* Light grey color for content text */
+    line-height: 1.6; /* Improved readability with more spacing */
+}
+  
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .title {
+        font-size: 2rem; /* Adjusted title size for smaller screens */
+    }
+  
+    .subtitle {
+        font-size: 1.4rem; /* Adjusted subtitle size */
+    }
+  
+    .topicTitle {
+        font-size: 1.5rem; /* Adjusted topic title size */
+    }
+  
+    .lessonTitle {
+        font-size: 1.2rem; /* Adjusted lesson title size */
+    }
+}

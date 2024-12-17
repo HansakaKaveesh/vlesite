@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 2: Variables and Data Types</title>
+    <style>
+        .csContainer {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background: linear-gradient(to bottom, #2d3748, #01000f); /* Dark gradient */
+            color: #ffffff; /* White text for contrast */
+            padding: 20px; /* Overall padding for the container */
+        }
+
+        .title {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 20px; /* Margin below title */
+            color: #63b3ed; /* Blue accent color for title */
+        }
+
+        .subtitle {
+            font-size: 1.8rem;
+            color: #cccccc; /* Light grey color for subtitle */
+            text-align: center; /* Centered subtitle */
+            margin-bottom: 15px; /* Margin below subtitle */
+        }
+
+        .lessonContent {
+            margin-top: 10px; /* Space above lesson content */
+            padding: 10px; /* Padding for lesson content */
+            background-color: #161c28; /* Background for lesson content */
+            border-radius: 10px; /* Slightly rounded corners */
+            color: #cccccc; /* Light grey color for content text */
+            line-height: 1.5; /* Improved readability */
+        }
+
+        .topicsSection {
+            margin-top: 30px; /* Space above topics section */
+        }
+
+        .topicTitle {
+            font-size: 1.6rem; /* Adjusted topic title size */
+            font-weight: bold;
+            margin-top: 20px; /* Space above topic titles */
+        }
+
+        .highlights {
+            background-color: #2d3748; /* Darker background for highlights */
+            border-left: 4px solid #63b3ed; /* Accent color on the left */
+            padding: 10px; /* Padding for highlights */
+            margin-top: 10px; /* Space above highlights */
+        }
+
+        .highlights h6 {
+            margin: 0 0 5px; /* Margin below highlights heading */
+        }
+
+        .highlights ul {
+            padding-left: 20px; /* Indentation for list */
+        }
+
+        @media (max-width: 768px) {
+            .title {
+                font-size: 2rem; /* Adjusted title size for smaller screens */
+            }
+
+            .subtitle {
+                font-size: 1.5rem; /* Adjusted subtitle size */
+            }
+
+            .topicTitle {
+                font-size: 1.5rem; /* Adjusted topic title size */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="csContainer">
+        <h4 class="title">Lesson 2: Variables and Data Types</h4>
+        <p class="subtitle">Understanding the Foundations of Programming</p>
+
+        <div class="lessonContent">
+            <p>This lesson introduces variables and various data types used in programming. Understanding these concepts is crucial for writing effective and efficient code.</p>
+
+            <div class="topicsSection">
+                <h5 class="topicTitle">1. What are Variables?</h5>
+                <p>Variables are containers for storing data values. In programming, they allow you to name and manipulate data efficiently. Think of a variable as a storage box with a label on it.</p>
+
+                <div class="highlights">
+                    <h6>Highlights:</h6>
+                    <ul>
+                        <li>Variables can hold different data types.</li>
+                        <li>They can be changed during program execution.</li>
+                        <li>Variable names must start with a letter or underscore.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="topicsSection">
+                <h5 class="topicTitle">2. Data Types</h5>
+                <p>Data types define the kind of data a variable can hold. Here are some common data types:</p>
+                <ul>
+                    <li><strong>Integer:</strong> Whole numbers, e.g., 1, -5, 42.</li>
+                    <li><strong>Float:</strong> Decimal numbers, e.g., 3.14, -0.001.</li>
+                    <li><strong>String:</strong> Text data enclosed in quotes, e.g., "Hello, World!".</li>
+                    <li><strong>Boolean:</strong> Represents true or false values.</li>
+                </ul>
+
+                <div class="highlights">
+                    <h6>Highlights:</h6>
+                    <ul>
+                        <li>Choosing the right data type is essential for memory efficiency.</li>
+                        <li>Data types impact how operations can be performed on the data.</li>
+                        <li>Type conversion can be necessary when dealing with mixed data types.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="topicsSection">
+                <h5 class="topicTitle">3. Declaring Variables</h5>
+                <p>To declare a variable, you typically specify the data type followed by the variable name. For example:</p>
+                <pre><code>int age = 25;</code></pre>
+                <p>In this example, we declare a variable <code>age</code> of type integer and assign it the value of 25.</p>
+
+                <div class="highlights">
+                    <h6>Highlights:</h6>
+                    <ul>
+                        <li>Use descriptive names for variables to enhance code readability.</li>
+                        <li>Follow naming conventions (camelCase, snake_case) for consistency.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="topicsSection">
+                <h5 class="topicTitle">4. Best Practices</h5>
+                <p>To use variables and data types effectively, consider the following best practices:</p>
+                <ul>
+                    <li>Keep variable names meaningful and relevant.</li>
+                    <li>Use constants for fixed values to prevent accidental changes.</li>
+                    <li>Document your code to explain complex data structures.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

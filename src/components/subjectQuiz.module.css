@@ -1,0 +1,73 @@
+.subjectQuizContainer {
+    background-color: #2d3748; /* Darker background to match theme */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Space inside the container */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); /* Shadow for depth */
+    max-width: 800px; /* Maximum width for quiz container */
+    margin: 20px auto; /* Center-align container */
+    color: #ffffff; /* White text for contrast */
+}
+
+.quizTitle {
+    font-size: 2rem; /* Large title font */
+    margin-bottom: 20px; /* Space below the title */
+    color: #4fd1c5; /* Accent color */
+    text-align: center; /* Center-align title */
+}
+
+.question {
+    margin-bottom: 15px; /* Space between questions */
+    font-size: 1.1rem; /* Slightly larger text for readability */
+    color: #e2e8f0; /* Light gray text */
+}
+
+.options {
+    margin: 10px 0; /* Space between options */
+}
+
+.options label {
+    display: block; /* Block layout for easier interaction */
+    margin-bottom: 8px; /* Space between options */
+    cursor: pointer; /* Pointer cursor */
+    background-color: #161c28; /* Slightly lighter than container */
+    border: 1px solid #4a5568; /* Subtle border color */
+    border-radius: 8px; /* Rounded corners */
+    padding: 12px; /* Space inside each option */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth hover */
+}
+
+.options input {
+    margin-right: 10px; /* Space between radio and text */
+}
+
+.options label:hover {
+    background-color: #3a4454; /* Darker on hover */
+    transform: translateY(-3px); /* Slight lift on hover */
+}
+
+.submitButton {
+    background-color: #4fd1c5; /* Teal button */
+    color: #ffffff; /* White text */
+    border: none; /* No border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 12px 20px; /* Space inside button */
+    cursor: pointer; /* Pointer cursor */
+    font-size: 1rem; /* Text size */
+    margin-top: 15px; /* Space above button */
+    text-align: center; /* Center the text */
+    width: 100%; /* Full-width button */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+.submitButton:hover {
+    background-color: #38b2ac; /* Darker teal on hover */
+    transform: translateY(-3px); /* Lift on hover */
+}
+
+.result {
+    margin-top: 20px; /* Space above result */
+    font-size: 1.3rem; /* Larger font for emphasis */
+    font-weight: bold; /* Bold text */
+    text-align: center; /* Center-align result */
+    color: #63b3ed; /* Blue for success */
+}

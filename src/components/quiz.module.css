@@ -1,0 +1,119 @@
+.startButton {
+    background-color: #174496;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 15px;
+    text-align: center;
+    width: 100%;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.startButton:hover {
+    background-color: #103370;
+    transform: translateY(-3px);
+}
+
+.quizContainer {
+    background-color: #2d3748; /* Darker background to match theme */
+    border-radius: 10px; /* Consistent rounded corners */
+    padding: 20px; /* Space inside the container */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); /* Enhanced shadow */
+    max-width: 600px; /* Centered max-width */
+    margin: 20px auto; /* Center the container */
+    color: #ffffff; /* White text for contrast */
+}
+
+.quizTitle {
+    font-size: 2rem; /* Large title size */
+    margin-bottom: 20px; /* Space below the title */
+    color: #ffffff; /* White text */
+    text-align: center; /* Center align */
+}
+
+.question {
+    margin-bottom: 15px; /* Space between questions */
+    font-size: 1.1rem; /* Slightly larger font for readability */
+    color: #cccccc; /* Lighter text color */
+}
+
+.options {
+    margin: 10px 0; /* Space around options */
+}
+
+.options label {
+    display: block; /* Block level for easy clicking */
+    margin-bottom: 8px; /* Space between options */
+    cursor: pointer; /* Pointer cursor */
+    background-color: #161c28; /* Slightly lighter than container */
+    border: 1px solid #4a5568; /* Subtle border */
+    border-radius: 8px; /* Consistent rounded corners */
+    padding: 12px; /* Padding for each option */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth hover */
+}
+
+.options input {
+    margin-right: 10px; /* Space between radio and label */
+}
+
+.options label:hover {
+    background-color: #3a4454; /* Darken on hover */
+    transform: translateY(-3px); /* Slight lift on hover */
+}
+.unansweredNotification {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.submitButton {
+    background-color: #63b3ed; /* Blue button color */
+    color: #ffffff; /* White text */
+    border: none; /* Remove border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 12px 20px; /* Space around text */
+    cursor: pointer; /* Pointer cursor */
+    font-size: 1rem; /* Font size */
+    margin-top: 15px; /* Space above button */
+    text-align: center;
+    width: 100%; /* Full width button */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.submitButton:hover {
+    background-color: #4a90e2; /* Darken on hover */
+    transform: translateY(-3px); /* Slight lift on hover */
+}
+
+.result {
+    margin-top: 20px; /* Space above result */
+    font-size: 1.2rem; /* Larger font for result */
+    font-weight: bold; /* Bold result */
+    text-align: center; /* Center align result */
+    color: #63b3ed; /* Blue accent color */
+}
+
+.correctAnswer {
+    margin-top: 8px; /* Space above correct answer text */
+    font-size: 1rem; /* Slightly smaller font size */
+    color: #e53e3e; /* Red color for emphasis */
+    font-weight: bold; /* Bold for visibility */
+    background-color: #2d3748; /* Match container background */
+    padding: 10px; /* Add padding around text */
+    border-radius: 5px; /* Rounded corners */
+    text-align: left; /* Align text left */
+    border: 1px solid #e53e3e; /* Subtle red border */
+    display: inline-block; /* Inline block for compact display */
+    width: fit-content; /* Adjust to fit content */
+}
+
+.loadingSpinner {
+    font-size: 1.2em;
+    text-align: center;
+    margin: 20px;
+}
+
+/* Other styles remain unchanged */

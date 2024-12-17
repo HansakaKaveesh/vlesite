@@ -1,0 +1,186 @@
+/* Importing Google Fonts (Make sure to include this in your HTML <head> section) */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+.csContainer {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #1a202c, #000000); /* Darker gradient */
+    color: #ffffff; /* White text for contrast */
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Title Section */
+.title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #4fd1c5; /* Cyan blue for title */
+    font-weight: 500;
+}
+
+.subtitle {
+    font-size: 1.8rem;
+    color: #cbd5e1;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.description {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+    color: #a0aec0;
+    line-height: 1.6;
+}
+
+/* Topics Section */
+.topicsSection {
+    margin-top: 30px;
+}
+
+.topicsList {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.topicItem {
+    background-color: #181f2a; /* Slightly darker for topic boxes */
+    border-radius: 12px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.topicItem:hover {
+    transform: translateY(-3px); /* Lift effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
+}
+
+.topicTitle {
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: #4fd1c5; /* Cyan blue */
+    margin: 0;
+}
+
+/* Lessons Section */
+.lessonsList {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column; /* Stack lessons vertically */
+    gap: 10px; /* Add space between lessons */
+}
+
+.lessonItem {
+    background-color: #2d3748; /* Matching gray-blue for lesson buttons */
+    border-radius: 8px;
+    padding: 12px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column; /* Ensures proper alignment */
+    align-items: flex-start; /* Align content to the left */
+}
+
+.lessonItem:hover {
+    background-color: #3b4758; /* Slightly darker hover effect */
+    transform: translateY(-3px); /* Slight lift */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.lessonTitle {
+    font-size: 1.4rem; /* Larger size for better readability */
+    color: #e2e8f0; /* Soft gray for lesson titles */
+    cursor: pointer;
+    margin-bottom: 8px;
+    transition: color 0.3s ease;
+}
+
+.lessonTitle:hover {
+    color: #63b3ed; /* Soft blue hover state */
+}
+
+.lessonContent {
+    margin-top: 10px;
+    padding: 15px;
+    background-color: #0f172a; /* Deep blue */
+    border-radius: 10px;
+    color: #e2e8f0;
+    line-height: 1.6;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Buttons */
+.quizButtonContainer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.quizButton,
+.subjectQuizButton {
+    background-color: #4a5568; /* Muted dark gray-blue */
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+    margin: 10px 0; /* Space between buttons */
+    width: 90%; /* Full width for better alignment */
+    max-width: 300px; /* Restrict maximum button size */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.quizButton:hover,
+.subjectQuizButton:hover {
+    background-color: #2d3748; /* Slightly darker button on hover */
+    transform: translateY(-3px); /* Lift effect */
+}
+
+.quizButton:active,
+.subjectQuizButton:active {
+    transform: translateY(0); /* Reset on click */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Reduced shadow */
+}
+
+/* Adjust Spacing for Quiz Buttons */
+.quizButtonContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between multiple quiz buttons */
+    align-items: center;
+    margin-top: 25px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .title {
+        font-size: 2.2rem;
+    }
+
+    .subtitle {
+        font-size: 1.5rem;
+    }
+
+    .description {
+        font-size: 1rem;
+    }
+
+    .topicTitle {
+        font-size: 1.5rem;
+    }
+
+    .lessonTitle {
+        font-size: 1.4rem;
+    }
+
+    .quizButton,
+    .subjectQuizButton {
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+}
